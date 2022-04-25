@@ -12,17 +12,62 @@
 html,
 body {
   height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  color: #131635;
+}
+
+a,
+a:link,
+a:visited{
+  display: flex;
+  align-items: center;
+  padding: 10px 35px 10px 15px;
+  color: #131635;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.active{
+  font-weight: 500;
+  background-color: #E5F1FF;
+  color: #0177FD;
+
+  .icon{
+    fill: #0177FD;
+  }
+}
+
+.icon{
+  margin-right: 10px;
+  fill: #A4B4CB;
+}
+
+a.active::before{
+  content: '';
+  height: 24px;
+  width: 4px;
+  background-color: #0177FD;
+  transform-origin: center;
+  border-radius: 20px;
+  transform: translateX(-37px);
 }
 
 .App {
+  height: 100vh;
   display: flex;
+  background-color: #EDF1F2;
   flex-direction: column;
 }
 
 .mainContainer {
   max-width: 1520px;
-  padding: 20px;
-  margin: 0 auto;
+  margin: 70px auto;
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .wrapper {
