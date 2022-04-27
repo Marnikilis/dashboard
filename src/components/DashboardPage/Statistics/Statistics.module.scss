@@ -1,0 +1,49 @@
+@import "../../../scss/settings";
+@import "../../../scss/mixins";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 42px 30px;
+}
+
+.statisticsItems{
+  display: flex;
+
+  @include media-max($xxs-break){
+    flex-direction: column;
+  }
+}
+
+.text{
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.statisticContainer{
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child){
+    margin-right: 50px;
+  }
+
+  @include media-max($xxs-break){
+   margin-bottom: 10px;
+
+    &:nth-child(2){
+      margin-left: 50px;
+    }
+    &:nth-child(3){
+      margin-left: 100px;
+    }
+    &:nth-child(4){
+      margin-left: 150px;
+    }
+  }
+}
+
+.statisticText{
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+}

@@ -1,0 +1,54 @@
+@import "../../scss/settings";
+@import "../../scss/mixins";
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  @include media-max($sm-break){
+  padding: 50px;
+  }
+
+  @include media-max($xxs-break){
+    padding: 0;
+  }
+}
+
+.headingFirst{
+  font-size: 18px;
+  margin: -15px 0 22px;
+
+  @include media-max($sm-break){
+    margin: -60px 0 22px;
+  }
+  @include media-max($xxs-break){
+    margin: -15px 0 22px;
+  }
+}
+
+.mainPartContainer{
+  display: flex;
+
+  @include media-max($lg-break){
+    flex-direction: column;
+    }
+}
+.flexContainer{
+  display: flex;
+
+  &>*{
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include media-max($xxs-break){
+        margin-right: 0;
+      }
+    }
+  }
+  @include media-max($xxs-break){
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px ;
+    margin-right: 0;
+  }
+}

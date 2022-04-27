@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ring{
+  display: flex;
+  margin-left: 20px;
+  position: relative;
+}
+.circle{
+  position: absolute;
+  top: 0;
+  right: 3%;
+  height: 4px;
+  width: 4px;
+  border: 0.8px solid #FFFFFF;
+  background-color: #0177FB;
+  border-radius: 50%;
+}

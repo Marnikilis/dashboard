@@ -1,0 +1,19 @@
+.container{
+  //padding: 15px 10px;
+}
+
+.input{
+  //border: 1.2px solid #819CFD;
+  //border-radius: 8px;
+}
+
+.transferIcons{
+  display: flex;
+  padding-bottom: 20px;
+  &>*{
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+    align-items: center;
+  }
+}

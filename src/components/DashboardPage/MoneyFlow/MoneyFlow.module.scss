@@ -1,0 +1,42 @@
+@import "../../../scss/settings";
+@import "../../../scss/mixins";
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  &>*{
+    margin-bottom: 20px;
+  }
+}
+.text{
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrowBox{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #0177FB;
+  text-align: center;
+}
+.icons{
+  display: flex;
+  align-items: center;
+
+  &>*{
+    margin-left: 20px;
+  }
+}
+
+.arrowContainer{
+  display: flex;
+  align-items: center;
+
+  &>*{
+  margin-right: 9px;
+  }
+}

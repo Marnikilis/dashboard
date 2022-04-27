@@ -1,16 +1,22 @@
 import './App.scss';
 import Navbar from "./components/Navbar/Navbar";
+import {Route, Routes} from "react-router-dom";
 import DashboardPage from "./components/DashboardPage/DashboardPage";
+import React from "react";
+import User from "./components/User/User";
 
-function App() {
+const App= ()=> {
   return (
     <div className={'App'}>
       <div className={'mainContainer'}>
         <Navbar/>
-        <DashboardPage/>
-
+        <div className={'container'}>
+          <User/>
+          <Routes>
+            <Route path='/dashboard' element={<DashboardPage/>}/>
+          </Routes>
+        </div>
       </div>
-
     </div>
   );
 }

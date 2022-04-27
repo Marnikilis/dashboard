@@ -1,0 +1,143 @@
+@import "../../../scss/settings";
+@import "../../../scss/mixins";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+
+  @include media-max($lg-break){
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px ;
+  }
+
+  @include media-max($xxs-break){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.card{
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.firstPartCard{
+  display: flex;
+  flex-direction: column;
+
+  &>*{
+    &:not(:first-child){
+      margin-bottom: 20px;
+    }
+    &:nth-child(2){
+      margin-bottom: 10px;
+    }
+  }
+
+  @include media-max($lg-break){
+    margin-right: 50px;
+  }
+  @include media-max($xxs-break){
+    margin-right: 0;
+  }
+}
+
+.headingFirst{
+  font-size: 18px;
+}
+.cardContent{
+  width: 85%;
+  position: absolute;
+  top:10px;
+  left: 15px;
+  color: #FFFFFF;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  margin-bottom: 30px;
+}
+
+.cardNumber{
+  display:flex;
+  justify-content: space-between;
+}
+
+.nameText{
+  font-size: 9px;
+  font-weight: 500;
+}
+.nameAllText{
+  font-size: 13px;
+}
+.data{
+  font-size: 8px;
+}
+
+.headingSecond{
+  font-size: 16px;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.inputContent{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 15px;
+}
+
+.curriences{
+  display: flex;
+  align-items: center;
+
+  img{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+    &:nth-child(2){
+      margin-left: -5px;
+      border: 3px solid #FFFFFF;
+    }
+  }
+}
+
+.currency{
+  font-size: 20px;
+  color: #A4B4CB;
+}
+
+.sendContainer{
+  margin-bottom: 25px;
+
+  @include media-max($lg-break){
+    margin-top: -10px;
+  }
+}
+.addContainer{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.sendBtn{
+  margin-top: 20px;
+  padding: 15px 70px;
+  background-color: #0177FB;
+  font-size: 12px;
+  border-radius: 16px;
+}

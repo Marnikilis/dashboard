@@ -1,0 +1,32 @@
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.inputContent{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 15px;
+}
+
+.currencies{
+  display: flex;
+  align-items: center;
+
+  img{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+    &:nth-child(2){
+      margin-left: -5px;
+      border: 3px solid #FFFFFF;
+    }
+  }
+}
+
+.currency{
+  font-size: 20px;
+  color: #A4B4CB;
+}

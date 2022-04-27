@@ -1,0 +1,77 @@
+@import "../../../scss/settings";
+@import "../../../scss/mixins";
+
+.container{
+  &>*{
+    &:not(:first-child){
+      margin: 20px 0;
+    }
+  }
+  @include media-max($xxs-break){
+    margin-top: 20px;
+  }
+}
+
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.recipients{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img{
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+}
+
+.btn{
+  color: #A5B4CB;
+  margin-left: 5px;
+}
+
+.groupContainer{
+  padding: 15px 18px;
+  width: 210px;
+  background: #FFFFFF;
+  box-shadow: 0 3.65625px 16.8187px rgba(0, 0, 0, 0.06);
+  border-radius: 8.04375px;
+}
+
+.group{
+  margin: 10px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    margin-right: -10px;
+  }
+}
+
+.groupMember{
+  display: flex;
+  justify-content: space-between;
+}
+.plus{
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px dotted #DDE5F0;
+  color: #0176FA;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  font-size: 12px;
+}

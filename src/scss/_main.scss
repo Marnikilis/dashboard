@@ -17,6 +17,14 @@ body {
   color: #131635;
 }
 
+button{
+  @include btn-reset();
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
 a,
 a:link,
 a:visited{
@@ -55,7 +63,6 @@ a.active::before{
 }
 
 .App {
-  height: 100vh;
   display: flex;
   background-color: #EDF1F2;
   flex-direction: column;
@@ -63,14 +70,83 @@ a.active::before{
 
 .mainContainer {
   max-width: 1520px;
-  margin: 70px auto;
+  margin: 50px auto;
   display: flex;
   background-color: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
+
+
+  @include media-max($lg-break){
+    margin: 0 auto;
+  }
+  @include media-max($sm-break){
+   flex-direction: column;
+  }
 }
 
+.container{
+  padding: 20px 30px 50px 20px;
+}
 .wrapper {
   flex: 1 0 auto;
 }
 
+.avatar{
+  border-radius: 100%;
+  margin-left: 20px;
+}
+
+.box{
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0 17px;
+  background-color: #FFFFFF;
+  box-shadow: 0 10.9688px 21.9375px rgba(122, 122, 122, 0.2);
+}
+
+select{
+  margin-left: 23px;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  color: #A5B4CB;
+  padding: 17px;
+}
+
+input{
+  margin: 0 25px 0 5px;
+  width: 100px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  caret-color: #0177FD;
+  font-size: 21px;
+  color: #131635;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  color: #798BA3;
+
+  &>* {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}
+
+.success{
+  padding: 5px 11px;
+  color: #61BB84;
+  background-color: #EBFFF3;
+  border-radius: 5px;
+}
+.pending{
+  padding: 5px 11px;
+  color: #FFAA90;
+  background-color: #FFF1ED;
+  border-radius: 5px;
+}
