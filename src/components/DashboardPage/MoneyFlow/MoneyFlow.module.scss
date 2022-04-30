@@ -37,6 +37,21 @@
   align-items: center;
 
   &>*{
-  margin-right: 9px;
+    &:not(:last-child){
+      margin-right: 9px;
+    }
+  }
+}
+
+.select{
+  padding: 6px 9px;
+  margin-left: auto;
+  border: 0.73125px solid #E5E9F4;
+  border-radius: 12.9443px;
+  box-sizing: border-box;
+
+  select:optional{
+    color: #131635;
+    font-size: 10px;
   }
 }

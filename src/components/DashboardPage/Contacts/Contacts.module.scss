@@ -2,6 +2,7 @@
 @import "../../../scss/mixins";
 
 .container{
+  position: relative;
   &>*{
     &:not(:first-child){
       margin: 20px 0;
@@ -18,49 +19,87 @@
   font-size: 13px;
 }
 
-.recipients{
+.recipients {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
-  img{
+  img {
     width: 24px;
     height: 24px;
-    margin-right: 15px;
   }
+  div{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
-.btn{
-  color: #A5B4CB;
-  margin-left: 5px;
+.line{
+  margin-top: 12px;
+  width: 22px;
+  border-bottom: 2px solid #0177FB;
+  border-radius: 7px;
 }
 
 .groupContainer{
+  position: relative;
   padding: 15px 18px;
   width: 210px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 3.65625px 16.8187px rgba(0, 0, 0, 0.06);
   border-radius: 8.04375px;
+  z-index: 1000000;
 }
+.backgroundBox{
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 110px;
+  z-index: 10;
+  background: #F3F3F3;
+  box-shadow: 0 16.8187px 32.9062px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
 
+  @include media-max($xxs-break){
+    top: 70%;
+  }
+}
 .group{
   margin: 10px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  &>*{
+    display: flex;
+    align-items: center;
+  }
+
+
   img{
     border-radius: 50%;
     border: 2px solid #FFFFFF;
-    margin-right: -10px;
+    margin-right: -5px;
   }
 }
 
 .groupMember{
   display: flex;
   justify-content: space-between;
+
+  &>*{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.textContainer{
+  margin-left: 12px;
 }
 .plus{
+  margin-left: 20px;
   height: 26px;
   width: 26px;
   border-radius: 50%;
@@ -74,4 +113,19 @@
 
 .text{
   font-size: 12px;
+}
+
+.message{
+  display: flex;
+  position: relative;
+}
+
+.circle{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 4px;
+  width: 4px;
+  background-color: #0177FB;
+  border-radius: 50%;
 }

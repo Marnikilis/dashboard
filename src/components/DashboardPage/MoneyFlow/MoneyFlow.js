@@ -15,6 +15,12 @@ const MoneyFlow = () => {
         <div className={styles.arrowBox}> <Arrow/> </div>
         <span>Savings</span>
         <div> <Arrow color={'#0177FD'}/> +6,79% </div>
+        <div className={styles.select}>
+          <select>
+            <option>Week</option>
+            <option>Month</option>
+          </select>
+        </div>
       </div>
       <Graphic/>
     </div>

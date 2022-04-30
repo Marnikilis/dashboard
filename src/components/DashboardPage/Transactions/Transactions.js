@@ -19,10 +19,10 @@ const Transactions = () => {
         <div>View all &#62;</div>
       </div>
       <div className={styles.scrollTable}>
-      <table style={{width:"110%"}}>
+      <table>
       {transactions.map(transaction =>{
         return(
-              <tr key={transaction.title} className={styles.transactionItem}>
+              <tr key={transaction.title}>
                 <td>  <img className={styles.img} src={transaction.img}/></td>
                 <td>  {transaction.title}</td>
                 <td> {transaction.data}</td>

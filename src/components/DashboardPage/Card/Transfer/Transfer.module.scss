@@ -1,19 +1,112 @@
-.container{
-  //padding: 15px 10px;
+.container {
+  padding: 15px 13px;
+  border-radius: 10px;
+  border: 0.566969px solid #E8E8E8;
+
+  &>*{
+    &:not(:last-child){
+      margin-bottom: 17px;
+    }
+
+    &:first-child{
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+  }
 }
 
-.input{
-  //border: 1.2px solid #819CFD;
-  //border-radius: 8px;
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 5px;
+  color: #3D424B;
+  border: 1.2px solid #819CFD;
+  border-radius: 8px;
+
+  label{
+    color: #A8B1BF;
+    margin-bottom: 6px;
+  }
+
+  input{
+    font-size: 15px;
+
+    &::placeholder{
+     color: #3D424B;
+    }
+  }
+  span{
+    font-size: 15px;
+  }
+}
+
+.inputContent{
+  display: flex;
+  align-items: center;
+}
+
+.currencies{
+  display: flex;
+  align-items: center;
+
+  img{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+    &:nth-child(2){
+      margin-left: -5px;
+    }
+  }
+}
+
+.debitContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 0.5px solid #F6F8FB;
+  border-radius: 7px;
+
+  &>*{
+    display: flex;
+    align-items: center;
+  }
+
+  span{
+    font-size: 10px;
+    color: #798BA3;
+    margin-left: -5px;
+  }
+
+  select{
+    font-size: 10px;
+
+    &:optional{
+      color: #798BA3;
+    }
+  }
+}
+
+.debitCircles{
+  margin-right: 11px;
 }
 
 .transferIcons{
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+
   &>*{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-right: 7px;
     align-items: center;
+    font-size: 9px;
+
+    span{
+      margin-top: 15px;
+      color: #798BA3;
+    }
   }
 }

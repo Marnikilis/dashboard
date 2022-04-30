@@ -100,19 +100,16 @@ a.active::before{
 .box{
   display: inline-block;
   border-radius: 10px;
-  padding: 0 17px;
   background-color: #FFFFFF;
   box-shadow: 0 10.9688px 21.9375px rgba(122, 122, 122, 0.2);
 }
 
 select{
-  margin-left: 23px;
   border: none;
   outline: none;
-  font-size: 11px;
   color: #A5B4CB;
-  padding: 17px;
 }
+
 
 input{
   margin: 0 25px 0 5px;

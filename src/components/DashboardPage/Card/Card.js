@@ -34,15 +34,12 @@ const Card = () => {
         <div className={styles.headingSecond}>Send Money</div>
         <div className={'box'}><Debit/></div>
         <div className={'box'}><InputAmount/></div>
-        <div>
-        </div>
       </div>
-
       <div>
         <div className={styles.sendContainer}>
           <div className={styles.addContainer}>
-            <img src={av4}/>
-            <span> Astrid Hayes</span>
+            <div> <img src={av4} alt={av4}/>
+              <span> Astrid Hayes</span> </div>
             <Add/>
           </div>
           <button className={styles.sendBtn}>Send Money</button>
