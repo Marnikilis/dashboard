@@ -23,3 +23,15 @@
 .debitCircles{
   margin-right: 11px;
 }
+.amountContainer{
+ font-size: 12px;
+  span{
+    color: #A4B4CB;
+    font-size: 12px;
+    margin-right: 2px;
+  }
+}
+.arrow{
+  margin-left: 20px;
+  transform: rotate(90deg);
+}

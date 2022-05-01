@@ -3,7 +3,7 @@ import styles from './Contacts.module.scss';
 import {ReactComponent as Pencil} from './contactsImg/pencil.svg';
 import {ReactComponent as Search} from './contactsImg/search.svg';
 import {ReactComponent as Message} from './contactsImg/message.svg';
-import {ReactComponent as ArrowBtn} from './contactsImg/arrowBtn.svg';
+import {ReactComponent as ArrowBtn} from '../../../images/arrowBtn.svg';
 import av2 from '../../../images/avatars/av2.svg';
 import av5 from '../../../images/avatars/av5.svg';
 import av6 from '../../../images/avatars/av6.svg';
