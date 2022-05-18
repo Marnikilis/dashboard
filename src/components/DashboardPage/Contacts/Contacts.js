@@ -20,44 +20,45 @@ const Contacts = () => {
     <div className={styles.container}>
       <div className={styles.contacts}>Recent Contacts
         <div>
-          <Pencil style={{marginRight:"20px"}}/>
+          <Pencil style={{marginRight: "20px"}}/>
           <Search/>
         </div>
       </div>
       <span>18 recipients</span>
       <div className={styles.recipients}>
-        <img src={av2}/>  <img src={av5}/>
-        <div> <img src={av6}/>
-        <div className={styles.line}/>
+        <img src={av2}/> <img src={av5}/>
+        <div><img src={av6}/>
+          <div className={styles.line}/>
         </div>
         <img src={av7}/> <img src={av8}/>
         <button><ArrowBtn/></button>
       </div>
-        <div className={styles.groupContainer}>
-          <div className={styles.text}><span style={{color:'#7D8DA6'}}>Group</span> Party</div>
-          <div className={styles.group}>
+      <div className={styles.groupContainer}>
+        <div className={styles.text}><span style={{color: '#7D8DA6'}}>Group</span> Party</div>
+        <div className={styles.group}>
+          <div>
             <div>
-              <div>
-                <img src={av9}/>
-                <img src={av10}/>
-                <img src={av11}/> </div>
-              <div className={styles.plus}>+5</div>
-            </div>
-            <div className={styles.message}>
-              <Message/>
-              <span className={styles.circle} />
-            </div>
+              <img src={av9}/>
+              <img src={av10}/>
+              <img src={av11}/></div>
+            <div className={styles.plus}>+5</div>
           </div>
-          <div className={styles.groupMember}>
-            <div>
-              <img src={av12}/>
-              <div className={styles.textContainer}>
-                <div className={styles.text}>Dakota Milk</div>
-                <span style={{color:'#7D8DA6'}}>$ 420.00</span>
-              </div></div>
-            <button><ArrowBtn/></button>
+          <div className={styles.message}>
+            <Message/>
+            <span className={styles.circle}/>
           </div>
         </div>
+        <div className={styles.groupMember}>
+          <div>
+            <img src={av12}/>
+            <div className={styles.textContainer}>
+              <div className={styles.text}>Dakota Milk</div>
+              <span style={{color: '#7D8DA6'}}>$ 420.00</span>
+            </div>
+          </div>
+          <button><ArrowBtn/></button>
+        </div>
+      </div>
       <div className={styles.backgroundBox}/>
     </div>
   );

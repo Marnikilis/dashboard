@@ -1,19 +1,21 @@
 @import "../../../scss/settings";
 @import "../../../scss/mixins";
 
-.container{
+.container {
   position: relative;
-  &>*{
-    &:not(:first-child){
+
+  & > * {
+    &:not(:first-child) {
       margin: 20px 0;
     }
   }
-  @include media-max($xxs-break){
+
+  @include media-max($xxs-break) {
     margin-top: 20px;
   }
 }
 
-.contacts{
+.contacts {
   display: flex;
   justify-content: space-between;
   font-size: 13px;
@@ -22,39 +24,41 @@
 .recipients {
   display: flex;
   justify-content: space-between;
-  //align-items: flex-start;
 
   img {
     width: 24px;
     height: 24px;
   }
-  div{
+
+  div {
     display: flex;
     flex-direction: column;
   }
-  button{
+
+  button {
     margin-top: -5px;
   }
 
 }
 
-.line{
+.line {
   margin-top: 12px;
   width: 24px;
   border-bottom: 2px solid #0177FB;
   border-radius: 7px;
 }
 
-.groupContainer{
+.groupContainer {
   position: relative;
   padding: 15px 18px;
   width: 210px;
   background-color: #FFFFFF;
   box-shadow: 0 3.65625px 16.8187px rgba(0, 0, 0, 0.06);
   border-radius: 8.04375px;
-  z-index: 1000000;
+  z-index: 100;
 }
-.backgroundBox{
+
+.backgroundBox {
   position: absolute;
   top: 63%;
   left: 50%;
@@ -66,43 +70,45 @@
   box-shadow: 0 16.8187px 32.9062px rgba(0, 0, 0, 0.1);
   border-radius: 14px;
 
-  @include media-max($xxs-break){
+  @include media-max($xxs-break) {
     top: 70%;
   }
 }
-.group{
+
+.group {
   margin: 10px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  &>*{
+  & > * {
     display: flex;
     align-items: center;
   }
 
 
-  img{
+  img {
     border-radius: 50%;
     border: 2px solid #FFFFFF;
     margin-right: -5px;
   }
 }
 
-.groupMember{
+.groupMember {
   display: flex;
   justify-content: space-between;
 
-  &>*{
+  & > * {
     display: flex;
     align-items: center;
   }
 }
 
-.textContainer{
+.textContainer {
   margin-left: 12px;
 }
-.plus{
+
+.plus {
   margin-left: 20px;
   height: 26px;
   width: 26px;
@@ -115,16 +121,16 @@
   justify-content: center;
 }
 
-.text{
+.text {
   font-size: 12px;
 }
 
-.message{
+.message {
   display: flex;
   position: relative;
 }
 
-.circle{
+.circle {
   position: absolute;
   top: -5px;
   right: -5px;
