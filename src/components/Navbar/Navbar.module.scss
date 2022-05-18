@@ -1,7 +1,7 @@
 @import "../../scss/settings";
 @import "../../scss/mixins";
 
-.container{
+.container {
   position: relative;
   padding: 20px;
   display: flex;
@@ -9,107 +9,58 @@
   justify-content: center;
   border-right: 2px solid #E8ECF5;
 
-  @include media-max($sm-break){
-   padding-bottom: 0;
+  @include media-max($sm-break) {
+    padding-bottom: 0;
     border-bottom: 2px solid #E8ECF5;
   }
 }
 
-.menu{
- height: 100%;
-
-  @include media-max($sm-break){
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    height: 20px;
-    width: 20px;
-  }
-}
-.checkbox{
-  display: none;
-
-  @include media-max($sm-break){
-    position: absolute;
-    height:100%;
-    width: 100%;
-    margin: 0;
-    z-index: 6000;
-    opacity: 0;
-    display: block;
-  }
-}
-
-.menuBtn{
-  display: none;
-  position: absolute;
-  top: 50%;
-  height: 1.5px;
-  background-color:currentColor;
-  width: 20px;
-  transition: all 0.5s;
-
-
-  &:after,
-  &:before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: currentColor;
-  }
-
-  &:after{
-    transform: translateY(-5px);
-  }
-  &:before{
-    transform: translateY(5px);
-  }
-
-  @include media-max($sm-break){
-    display: block;
-    z-index: 5000;
-  }
-}
-
-.nav{
+.nav {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  @include media-max($sm-break){
-    position: absolute;
-    top:-60px;
-    right: -60px;
+  @include media-max($sm-break) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 200px;
     height: 100vh;
-    padding: 20px 40px;
+    padding: 20px 20px 0 40px;
     background-color: #FFFFFF;
-    width: 200px;
     z-index: 4000;
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: all 0.5s ease-in-out;
     box-shadow: 0 10.9688px 21.9375px rgba(122, 122, 122, 0.2);
 
     & > * {
       margin: 20px 0;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-top: 90px;
       }
     }
+
+    &.close {
+      transform: translateX(100%);
+    }
   }
 }
-.navLinks{
-  display: flex;
-  flex-direction: column;
-}
-.navSettings{
+
+.navLinks {
   display: flex;
   flex-direction: column;
 }
 
-.messages{
+.navSettings {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
   margin-left: 30px;
   height: 15px;
   width: 15px;
@@ -119,23 +70,3 @@
   text-align: center;
   font-size: 10px;
 }
-
-
-
-
-nav input[type="checkbox"]:checked  ~ .nav{
-  @include media-max($sm-break){
-    transform: translateX(0);
-  }
-}
-
-nav input[type="checkbox"]:checked ~ .menuBtn:before {
-  transform: rotate(90deg);
-}
-nav input[type="checkbox"]:checked ~ .menuBtn {
-  transform: rotate(45deg);
-}
-nav input[type="checkbox"]:checked ~ .menuBtn:after{
-  display: none;
-}
-
