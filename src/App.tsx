@@ -1,7 +1,7 @@
 import './App.scss';
 import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
-import DashboardPage from "./components/DashboardPage/DashboardPage";
+import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import React from "react";
 import User from "./components/User/User";
 

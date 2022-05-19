@@ -1,9 +1,9 @@
 import React from 'react';
 //@ts-ignore
 import styles from './InputAmount.module.scss';
-import av3 from "../../../../images/avatars/av3.svg";
-import usd from "../../../../images/currencies/usa.png";
-import french from "../../../../images/currencies/french.png";
+import av3 from "../../../images/avatars/av3.svg";
+import usd from "../../../images/currencies/usa.png";
+import french from "../../../images/currencies/french.png";
 
 const InputAmount = () => {
   return (

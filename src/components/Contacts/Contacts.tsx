@@ -4,16 +4,16 @@ import styles from './Contacts.module.scss';
 import {ReactComponent as Pencil} from './contactsImg/pencil.svg';
 import {ReactComponent as Search} from './contactsImg/search.svg';
 import {ReactComponent as Message} from './contactsImg/message.svg';
-import {ReactComponent as ArrowBtn} from '../../../images/arrowBtn.svg';
-import av2 from '../../../images/avatars/av2.svg';
-import av5 from '../../../images/avatars/av5.svg';
-import av6 from '../../../images/avatars/av6.svg';
-import av7 from '../../../images/avatars/av7.svg';
-import av8 from '../../../images/avatars/av8.svg';
-import av9 from '../../../images/avatars/av9.svg';
-import av10 from '../../../images/avatars/av10.svg';
-import av11 from '../../../images/avatars/av11.svg';
-import av12 from '../../../images/avatars/av12.svg';
+import {ReactComponent as ArrowBtn} from '../../images/arrowBtn.svg';
+import av2 from '../../images/avatars/av2.svg';
+import av5 from '../../images/avatars/av5.svg';
+import av6 from '../../images/avatars/av6.svg';
+import av7 from '../../images/avatars/av7.svg';
+import av8 from '../../images/avatars/av8.svg';
+import av9 from '../../images/avatars/av9.svg';
+import av10 from '../../images/avatars/av10.svg';
+import av11 from '../../images/avatars/av11.svg';
+import av12 from '../../images/avatars/av12.svg';
 
 
 const Contacts = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 //@ts-ignore
 import styles from './Transactions.module.scss';
-import bitcoin from '../../../images/bitcoin.png';
-import av2 from '../../../images/avatars/av2.svg';
-import withdraw from '../../../images/withdraw.svg'
+import bitcoin from '../../images/bitcoin.png';
+import av2 from '../../images/avatars/av2.svg';
+import withdraw from '../../images/withdraw.svg'
 
 const transactions = [
   {img: bitcoin, title: 'Bitcoin Transactions', data: 'Jan 16, 2020', cardNumber: '*****45242', amount: '-$853.00', status:'success' },

@@ -1,11 +1,11 @@
 import React from 'react';
 //@ts-ignore
 import styles from './DashboardPage.module.scss';
-import Card from "./Card/Card";
-import Transactions from "./Transactions/Transactions";
-import Statistics from "./Statistics/Statistics";
-import MoneyFlow from "./MoneyFlow/MoneyFlow";
-import Contacts from "./Contacts/Contacts";
+import Card from "../../components/Card/Card";
+import Transactions from "../../components/Transactions/Transactions";
+import Statistics from "../../components/Statistics/Statistics";
+import MoneyFlow from "../../components/MoneyFlow/MoneyFlow";
+import Contacts from "../../components/Contacts/Contacts";
 
 const DashboardPage = () => {
   return (

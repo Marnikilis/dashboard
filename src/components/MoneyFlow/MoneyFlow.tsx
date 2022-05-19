@@ -1,8 +1,8 @@
 import React from 'react';
 //@ts-ignore
 import styles from './MoneyFlow.module.scss';
-import {ReactComponent as Graphic} from "../../../images/graphic.svg";
-import {ReactComponent as GraphImg} from "../../../images/graphImg.svg";
+import {ReactComponent as Graphic} from "../../images/graphic.svg";
+import {ReactComponent as GraphImg} from "../../images/graphImg.svg";
 import Arrow from "./Arrow";
 
 const MoneyFlow = () => {

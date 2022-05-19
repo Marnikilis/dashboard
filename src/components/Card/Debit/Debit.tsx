@@ -1,8 +1,8 @@
 import React from 'react';
 //@ts-ignore
 import styles from './Debit.module.scss';
-import {ReactComponent as DebitImg} from '../../../../images/debit.svg';
-import {ReactComponent as ArrowBtn} from '../../../../images/arrowBtn.svg';
+import {ReactComponent as DebitImg} from '../../../images/debit.svg';
+import {ReactComponent as ArrowBtn} from '../../../images/arrowBtn.svg';
 
 const Debit = () => {
   return (

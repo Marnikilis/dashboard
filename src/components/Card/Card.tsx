@@ -1,11 +1,11 @@
 import React from 'react';
 //@ts-ignore
 import styles from './Card.module.scss';
-import {ReactComponent as MyCard} from '../../../images/card.svg';
-import {ReactComponent as Visa} from '../../../images/visa.svg';
-import {ReactComponent as Add} from '../../../images/addBtn.svg';
+import {ReactComponent as MyCard} from '../../images/card.svg';
+import {ReactComponent as Visa} from '../../images/visa.svg';
+import {ReactComponent as Add} from '../../images/addBtn.svg';
 
-import av4 from '../../../images/avatars/av4.svg';
+import av4 from '../../images/avatars/av4.svg';
 import Debit from "./Debit/Debit";
 import Transfer from "./Transfer/Transfer";
 import InputAmount from "./InputAmount/InputAmount";
