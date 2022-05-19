@@ -8,6 +8,6 @@ const root = ReactDOMClient.createRoot(container);
 
 root.render(
   <Router>
-    <App />
+    <App/>
   </Router>);
 

@@ -35,12 +35,14 @@ a:visited{
   font-size: 12px;
   text-decoration: none;
   border-radius: 5px;
+  margin-left: 4px;
 }
 
 a.active{
   font-weight: 500;
   background-color: #E5F1FF;
   color: #0177FD;
+  margin-left: 0;
 
   .icon{
     fill: #0177FD;

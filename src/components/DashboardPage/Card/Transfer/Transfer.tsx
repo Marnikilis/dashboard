@@ -1,6 +1,6 @@
 import React from 'react';
+//@ts-ignore
 import styles from './Transfer.module.scss';
-// import Debit from "../Debit/Debit";
 import {ReactComponent as Send} from './imgTransfer/send.svg';
 import {ReactComponent as Receive} from './imgTransfer/receive.svg';
 import {ReactComponent as Invoicing} from './imgTransfer/ivoicing.svg';
@@ -40,16 +40,20 @@ const Transfer = () => {
       </div>
 
       <div className={styles.transferIcons}>
-        <div><Send/>
+        <div>
+          <Send/>
           <span>Send</span>
         </div>
-        <div><Receive/>
+        <div>
+          <Receive/>
           <span>Receive</span>
         </div>
-        <div><Invoicing/>
+        <div>
+          <Invoicing/>
           <span>Invoicing </span>
         </div>
-        <div><More/>
+        <div>
+          <More/>
           <span>More</span>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+//@ts-ignore
 import styles from './User.module.scss';
 import {ReactComponent as Search} from '../../images/search.svg';
 import {ReactComponent as Ring} from '../../images/ring.svg';

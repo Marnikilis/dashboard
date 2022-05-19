@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+//@ts-ignore
 import styles from './Navbar.module.scss';
 import {NavLink} from "react-router-dom";
 import Logo from "./Logo";

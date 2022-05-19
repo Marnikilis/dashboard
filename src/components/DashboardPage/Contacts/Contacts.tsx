@@ -1,4 +1,5 @@
 import React from 'react';
+//@ts-ignore
 import styles from './Contacts.module.scss';
 import {ReactComponent as Pencil} from './contactsImg/pencil.svg';
 import {ReactComponent as Search} from './contactsImg/search.svg';
@@ -26,21 +27,27 @@ const Contacts = () => {
       </div>
       <span>18 recipients</span>
       <div className={styles.recipients}>
-        <img src={av2}/> <img src={av5}/>
-        <div><img src={av6}/>
+        <img src={av2}  alt='Avatar'/>
+        <img src={av5}  alt='Avatar'/>
+        <div>
+          <img src={av6}  alt='Avatar'/>
           <div className={styles.line}/>
         </div>
-        <img src={av7}/> <img src={av8}/>
-        <button><ArrowBtn/></button>
+        <img src={av7}  alt='Avatar'/>
+        <img src={av8}  alt='Avatar'/>
+        <button>
+          <ArrowBtn/>
+        </button>
       </div>
       <div className={styles.groupContainer}>
         <div className={styles.text}><span style={{color: '#7D8DA6'}}>Group</span> Party</div>
         <div className={styles.group}>
           <div>
             <div>
-              <img src={av9}/>
-              <img src={av10}/>
-              <img src={av11}/></div>
+              <img src={av9}  alt='Avatar'/>
+              <img src={av10}  alt='Avatar'/>
+              <img src={av11}  alt='Avatar'/>
+            </div>
             <div className={styles.plus}>+5</div>
           </div>
           <div className={styles.message}>
@@ -50,13 +57,15 @@ const Contacts = () => {
         </div>
         <div className={styles.groupMember}>
           <div>
-            <img src={av12}/>
+            <img src={av12}  alt='Avatar'/>
             <div className={styles.textContainer}>
               <div className={styles.text}>Dakota Milk</div>
               <span style={{color: '#7D8DA6'}}>$ 420.00</span>
             </div>
           </div>
-          <button><ArrowBtn/></button>
+          <button>
+            <ArrowBtn/>
+          </button>
         </div>
       </div>
       <div className={styles.backgroundBox}/>

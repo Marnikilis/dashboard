@@ -1,4 +1,5 @@
 import React from 'react';
+//@ts-ignore
 import styles from './Transactions.module.scss';
 import bitcoin from '../../../images/bitcoin.png';
 import av2 from '../../../images/avatars/av2.svg';
@@ -20,10 +21,11 @@ const Transactions = () => {
       </div>
       <div className={styles.scrollTable}>
       <table>
+        <tbody>
       {transactions.map(transaction =>{
         return(
               <tr key={transaction.title}>
-                <td>  <img className={styles.img} src={transaction.img}/></td>
+                <td>  <img className={styles.img} src={transaction.img} alt='Avatar'/></td>
                 <td>  {transaction.title}</td>
                 <td> {transaction.data}</td>
                 <td> {transaction.cardNumber}</td>
@@ -31,6 +33,7 @@ const Transactions = () => {
                 <td><button className={`${transaction.status}`}>{transaction.status}</button> </td>
               </tr>
         )})}
+        </tbody>
       </table>
       </div>
     </div>

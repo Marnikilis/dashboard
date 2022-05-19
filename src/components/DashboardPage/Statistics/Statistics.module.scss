@@ -9,9 +9,11 @@
 
 .statisticsItems{
   display: flex;
+  gap: 50px ;
 
   @include media-max($xxs-break){
-    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
   }
 }
 
@@ -23,12 +25,9 @@
   display: flex;
   align-items: center;
 
-  &:not(:last-child){
-    margin-right: 50px;
-  }
-
   @include media-max($xxs-break){
    margin-bottom: 10px;
+    flex: 0 1 100px;
   }
 }
 

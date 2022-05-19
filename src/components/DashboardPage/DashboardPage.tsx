@@ -1,4 +1,5 @@
 import React from 'react';
+//@ts-ignore
 import styles from './DashboardPage.module.scss';
 import Card from "./Card/Card";
 import Transactions from "./Transactions/Transactions";

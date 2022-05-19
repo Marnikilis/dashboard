@@ -1,4 +1,5 @@
 import React from 'react';
+//@ts-ignore
 import styles from './Statistics.module.scss';
 import customers from './statisticImages/customers.svg';
 import remittance from './statisticImages/remittance.svg';
@@ -21,7 +22,7 @@ const Statistics = () => {
       {statistics.map(item=>{
         return(
           <div key={item.text} className={styles.statisticContainer}>
-            <img src={item.img} alt={item.img}/>
+            <img src={item.img} alt='Statisctic'/>
             <div className={styles.statisticText}>
               <span>{item.amount}</span>
               <span>{item.text}</span>

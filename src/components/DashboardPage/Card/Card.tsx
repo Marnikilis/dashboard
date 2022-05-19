@@ -1,4 +1,5 @@
 import React from 'react';
+//@ts-ignore
 import styles from './Card.module.scss';
 import {ReactComponent as MyCard} from '../../../images/card.svg';
 import {ReactComponent as Visa} from '../../../images/visa.svg';
@@ -32,14 +33,19 @@ const Card = () => {
           </div>
         </div>
         <div className={styles.headingSecond}>Send Money</div>
-        <div className={'box'}><Debit/></div>
-        <div className={'box'}><InputAmount/></div>
+        <div className={'box'}>
+          <Debit/>
+        </div>
+        <div className={'box'}>
+          <InputAmount/>
+        </div>
       </div>
       <div>
         <div className={styles.sendContainer}>
           <div className={styles.addContainer}>
-            <div> <img src={av4} alt={av4}/>
-              <span> Astrid Hayes</span> </div>
+            <div>
+              <img src={av4} alt='Avatar'/>
+              <span> Astrid Hayes</span></div>
             <Add/>
           </div>
           <button className={styles.sendBtn}>Send Money</button>
