@@ -1,12 +1,16 @@
 import React from 'react';
 //@ts-ignore
 import styles from './Debit.module.scss';
-import {ReactComponent as DebitImg} from '../../../images/debit.svg';
-import {ReactComponent as ArrowBtn} from '../../../images/arrowBtn.svg';
+import CustomSelect from '../../../containers/CustomSelect/CustomSelect';
+import { ReactComponent as DebitImg } from '../../../images/debit.svg';
+import { ReactComponent as ArrowBtn } from '../../../images/arrowBtn.svg';
+
+const optionsAmount = ["10.680", "11.680", "12.680",];
 
 const Debit = () => {
   return (
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.debitContent}>
         <div>
           <div className={styles.debitCircles}>
             <DebitImg/>
@@ -14,13 +18,13 @@ const Debit = () => {
           <span>Debit</span>
         </div>
         <div className={styles.amountContainer}>
-          <span>$ </span>
-          10.680
-          <div className={styles.arrow}>
+          <span>$</span>
+          <CustomSelect options={optionsAmount}>
             <ArrowBtn/>
-          </div>
+          </CustomSelect>
         </div>
       </div>
+    </div>
   );
 };
 

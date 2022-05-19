@@ -16,6 +16,35 @@ body {
   font-size: 10px;
   color: #000000;
 }
+.App {
+  display: flex;
+  background-color: #EDF1F2;
+  flex-direction: column;
+}
+
+.mainContainer {
+  max-width: 1520px;
+  margin: 50px auto;
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+
+
+  @include media-max($lg-break){
+    margin: 0 auto;
+  }
+  @include media-max($sm-break){
+    flex-direction: column;
+  }
+}
+
+.container{
+  padding: 20px 30px 50px 20px;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
 
 button{
   @include btn-reset();
@@ -64,36 +93,6 @@ a.active::before{
   transform: translateX(-37px);
 }
 
-.App {
-  display: flex;
-  background-color: #EDF1F2;
-  flex-direction: column;
-}
-
-.mainContainer {
-  max-width: 1520px;
-  margin: 50px auto;
-  display: flex;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  overflow: hidden;
-
-
-  @include media-max($lg-break){
-    margin: 0 auto;
-  }
-  @include media-max($sm-break){
-   flex-direction: column;
-  }
-}
-
-.container{
-  padding: 20px 30px 50px 20px;
-}
-.wrapper {
-  flex: 1 0 auto;
-}
-
 .avatar{
   border-radius: 100%;
   margin-left: 20px;
@@ -106,22 +105,13 @@ a.active::before{
   box-shadow: 0 10.9688px 21.9375px rgba(122, 122, 122, 0.2);
 }
 
-select{
-  border: none;
-  outline: none;
-  color: #A5B4CB;
-}
-
-
 input{
-  margin: 0 25px 0 5px;
-  width: 100px;
+  caret-color: #0177FD;
   border: none;
   outline: none;
-  display: inline-block;
-  caret-color: #0177FD;
-  font-size: 21px;
-  color: #131635;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
 }
 
 label{

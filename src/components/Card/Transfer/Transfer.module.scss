@@ -30,7 +30,8 @@
 
   input{
     font-size: 15px;
-
+    max-width: 120px;
+    padding-right: 10px;
     &::placeholder{
      color: #3D424B;
     }
@@ -43,11 +44,13 @@
 .inputContent{
   display: flex;
   align-items: center;
+  max-width: 120px;
 }
 
 .currencies{
   display: flex;
   align-items: center;
+  flex: 0 0 40%;
 
   img{
     height: 15px;
@@ -78,14 +81,6 @@
     color: #798BA3;
     margin-left: -5px;
   }
-
-  select{
-    font-size: 10px;
-
-    &:optional{
-      color: #798BA3;
-    }
-  }
 }
 
 .debitCircles{
@@ -95,12 +90,12 @@
 .transferIcons{
   display: flex;
   padding-bottom: 5px;
+  gap: 10px;
 
   &>*{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 7px;
     align-items: center;
     font-size: 9px;
 
@@ -109,4 +104,9 @@
       color: #798BA3;
     }
   }
+}
+
+.select{
+  flex: 0 1 60px;
+  color: #798BA3;
 }

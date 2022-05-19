@@ -4,6 +4,10 @@ import styles from './MoneyFlow.module.scss';
 import {ReactComponent as Graphic} from "../../images/graphic.svg";
 import {ReactComponent as GraphImg} from "../../images/graphImg.svg";
 import Arrow from "./Arrow";
+import CustomSelect from '../../containers/CustomSelect/CustomSelect';
+import { ReactComponent as ArrowBtn } from '../../images/arrowBtn.svg';
+
+const optionsPeriod = ["Week", "Month", "Year",];
 
 const MoneyFlow = () => {
   return (
@@ -21,10 +25,9 @@ const MoneyFlow = () => {
         <span>Savings</span>
         <div> <Arrow color={'#0177FD'}/> +6,79% </div>
         <div className={styles.select}>
-          <select>
-            <option>Week</option>
-            <option>Month</option>
-          </select>
+          <CustomSelect options={optionsPeriod}>
+            <ArrowBtn/>
+          </CustomSelect>
         </div>
       </div>
       <Graphic/>

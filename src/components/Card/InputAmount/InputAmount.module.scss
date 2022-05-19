@@ -9,8 +9,13 @@
   align-items: center;
   padding: 10px 0;
 
-  input::placeholder{
-    color: #131635;
+  input{
+    font-size: 21px;
+    max-width: 130px;
+
+    &::placeholder{
+      color: #131635;
+    }
   }
 }
 

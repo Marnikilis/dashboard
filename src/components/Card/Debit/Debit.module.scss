@@ -1,13 +1,11 @@
 .container{
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px;
-
-
-  select:optional{
-    color: #131635;
-  }
+}
+.debitContent{
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 0 17px 15px;
 
   &>*{
     display: flex;
@@ -19,19 +17,18 @@
     }
   }
 }
-
 .debitCircles{
   margin-right: 11px;
 }
+
 .amountContainer{
- font-size: 12px;
+  font-size: 12px;
+  display: flex;
+  flex: 0 1 80px;
+
   span{
     color: #A4B4CB;
     font-size: 12px;
     margin-right: 2px;
   }
-}
-.arrow{
-  margin-left: 20px;
-  transform: rotate(90deg);
 }

@@ -1,0 +1,63 @@
+@import '../../scss/mixins';
+@import '../../scss/settings';
+
+.container{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.select{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+
+  input{
+    display: flex;
+    font-size: inherit;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    width: 70%;
+    &::placeholder{
+      color: inherit;
+    }
+  }
+  button{
+    transform: rotate(90deg);
+  }
+}
+.backdown{
+  z-index: 1000;
+  background-color: #FFFFFF;
+  max-height: 200px;
+  overflow: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: $transition;
+
+  button{
+    padding: 10px 20px 10px 10px;
+    text-transform: capitalize;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  &.close{
+    transform: translateY(-150%);
+    display: none;
+  }
+}
+
+.backdrop {
+  z-index: 50;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

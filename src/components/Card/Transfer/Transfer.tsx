@@ -8,6 +8,10 @@ import {ReactComponent as More} from './imgTransfer/more.svg';
 import first from './imgTransfer/firstav.png';
 import second from './imgTransfer/secondav.png';
 import {ReactComponent as DebitImg} from "./imgTransfer/debit.svg";
+import CustomSelect from '../../../containers/CustomSelect/CustomSelect';
+import { ReactComponent as ArrowBtn } from '../../../images/arrowBtn.svg';
+
+const optionsAmount = ["$10,432", "$11,680", "$12,680",];
 
 const Transfer = () => {
   return (
@@ -20,10 +24,11 @@ const Transfer = () => {
           </div>
           <span>Debit</span>
         </div>
-        <select>
-          <option>$10.432</option>
-          <option>$12.345</option>
-        </select>
+        <div className={styles.select}>
+          <CustomSelect options={optionsAmount}>
+            <ArrowBtn/>
+          </CustomSelect>
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
