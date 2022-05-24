@@ -20,6 +20,9 @@
   @include media-max($sm-break) {
     display: flex;
   }
+  @include media-max($xxs-break) {
+    right: 15px;
+  }
 }
 
 .menuToggle.open {

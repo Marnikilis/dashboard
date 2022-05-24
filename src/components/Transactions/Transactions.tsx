@@ -17,7 +17,7 @@ const Transactions = () => {
     <div className={styles.container}>
       <div className={styles.transactionText}>
         <div className={styles.headingThird}>Recent Transactions</div>
-        <div>View all &#62;</div>
+        <button>View all &#62;</button>
       </div>
       <div className={styles.scrollTable}>
         <table>

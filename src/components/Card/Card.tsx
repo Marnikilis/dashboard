@@ -84,7 +84,9 @@ const Card = () => {
         <div className={styles.addContainer}>
           <img src={av4} alt='Avatar'/>
           <span> Astrid Hayes</span>
-          <Add/>
+          <button className={styles.addBtn} type='button'>
+            <Add/>
+          </button>
         </div>
         <button type='submit' className={styles.sendBtn}>Send Money</button>
       </form>
