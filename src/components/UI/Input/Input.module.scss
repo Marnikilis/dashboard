@@ -1,17 +1,17 @@
 @import "../../../scss/settings";
 @import "../../../scss/mixins";
 
-.container{
+.container {
   input {
     max-width: 120px;
 
-    &::placeholder{
+    &::placeholder {
       color: #131635;
     }
   }
 }
 
-.error{
+.error {
   color: crimson;
   font-size: 8px;
 }

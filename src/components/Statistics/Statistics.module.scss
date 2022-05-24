@@ -1,47 +1,49 @@
 @import "../../scss/settings";
 @import "../../scss/mixins";
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   padding: 42px 30px;
 }
 
-.statisticsItems{
+.statisticsItems {
   display: flex;
   gap: 42px;
 
-  @include media-max($l-break){
+  @include media-max($l-break) {
     flex-wrap: wrap;
     row-gap: 20px;
   }
 }
 
-.text{
+.text {
   font-size: 16px;
   margin-bottom: 25px;
 }
-.statisticContainer{
+
+.statisticContainer {
   display: flex;
   align-items: center;
 
-  @include media-max($xxs-break){
-   margin-bottom: 10px;
+  @include media-max($xxs-break) {
+    margin-bottom: 10px;
     flex: 0 1 100px;
   }
 }
 
-.statisticText{
+.statisticText {
   display: flex;
   flex-direction: column;
   margin-left: 6px;
 
-  &>*{
-    &:nth-child(1){
+  & > * {
+    &:nth-child(1) {
       font-size: 14px;
       color: #333333;
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       color: #798BA3;
     }
   }

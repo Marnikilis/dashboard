@@ -3,19 +3,19 @@
   border-radius: 10px;
   border: 0.566969px solid #E8E8E8;
 
-  &>*{
-    &:not(:last-child){
+  & > * {
+    &:not(:last-child) {
       margin-bottom: 17px;
     }
 
-    &:first-child{
+    &:first-child {
       margin-bottom: 10px;
       font-size: 11px;
     }
   }
 }
 
-.inputContainer{
+.inputContainer {
   display: flex;
   flex-direction: column;
   padding: 6px 10px 5px;
@@ -24,35 +24,35 @@
   border-radius: 8px;
   font-size: 15px;
 
-  label{
+  label {
     color: #A8B1BF;
     margin-bottom: 5px;
     font-size: 10px;
   }
 }
 
-.inputContent{
+.inputContent {
   display: flex;
   align-items: center;
 }
 
-.currencies{
+.currencies {
   display: flex;
   align-items: center;
   margin-left: auto;
 
-  img{
+  img {
     height: 17px;
     width: 17px;
     border-radius: 50%;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: -5px;
     }
   }
 }
 
-.debitContainer{
+.debitContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,44 +60,44 @@
   border: 0.5px solid #F6F8FB;
   border-radius: 7px;
 
-  &>*{
+  & > * {
     display: flex;
     align-items: center;
   }
 
-  span{
+  span {
     font-size: 10px;
     color: #798BA3;
     margin-left: -5px;
   }
 }
 
-.debitCircles{
-  span{
+.debitCircles {
+  span {
     margin-left: 5px;
   }
 }
 
-.transferIcons{
+.transferIcons {
   display: flex;
   padding-bottom: 12px;
   gap: 7px;
 
-  &>*{
+  & > * {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 9px;
 
-    span{
+    span {
       margin-top: 15px;
       color: #798BA3;
     }
   }
 }
 
-.select{
+.select {
   flex: 0 1 60px;
   color: #798BA3;
 }

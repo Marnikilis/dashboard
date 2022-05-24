@@ -1,155 +1,162 @@
 @import "../../scss/settings";
 @import "../../scss/mixins";
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-right: 30px;
 
-  @include media-max($lg-break){
+  @include media-max($lg-break) {
     margin-right: 0;
     flex-direction: row;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
     gap: 30px;
   }
 
-  @include media-max($l-break){
+  @include media-max($l-break) {
     flex-direction: column;
     margin-bottom: 20px;
     gap: 0;
   }
 }
-.card{
+
+.card {
   position: relative;
   display: inline-block;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
-.firstPartCard{
+.firstPartCard {
   display: flex;
   flex-direction: column;
 
-  &>*{
-    &:not(:first-child){
+  & > * {
+    &:not(:first-child) {
       margin-bottom: 20px;
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       margin-bottom: 10px;
     }
   }
 
-  @include media-max($lg-break){
+  @include media-max($lg-break) {
     //margin-right: 50px;
   }
-  @include media-max($xxs-break){
+  @include media-max($xxs-break) {
     margin-right: 0;
   }
 }
 
-.headingFirst{
+.headingFirst {
   font-size: 18px;
 }
-.cardContent{
+
+.cardContent {
   width: 100%;
   position: absolute;
-  top:10px;
+  top: 10px;
   left: 15px;
   color: #FFFFFF;
 }
-.info{
+
+.info {
   display: flex;
   flex-direction: column;
 }
 
-.name{
+.name {
   margin-bottom: 30px;
 }
 
-.cardNumber{
-  display:flex;
+.cardNumber {
+  display: flex;
   justify-content: space-between;
 
-  &>*{
+  & > * {
     margin-right: auto;
   }
 }
 
-.nameText{
+.nameText {
   font-size: 9px;
   font-weight: 500;
 }
-.nameAllText{
+
+.nameAllText {
   font-size: 13px;
 }
-.data{
+
+.data {
   font-size: 8px;
 }
 
-.headingSecond{
+.headingSecond {
   font-size: 16px;
 }
 
-.inputContainer{
+.inputContainer {
   display: flex;
   flex-direction: column;
   padding: 3px 15px;
 }
 
-.inputContent{
+.inputContent {
   display: flex;
   align-items: center;
   padding: 10px 0;
   font-size: 21px;
 
-  span{
+  span {
     margin-right: 5px;
     color: #A4B4CB;
   }
 }
 
-.currencies{
+.currencies {
   display: flex;
   align-items: center;
   margin-left: auto;
 
-  img{
+  img {
     height: 15px;
     width: 15px;
     border-radius: 50%;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: -5px;
       border: 3px solid #FFFFFF;
     }
   }
 }
 
-.currency{
+.currency {
   font-size: 20px;
   color: #A4B4CB;
 }
-form{
 
-  &>*{
-    &:not(:last-child){
+form {
+
+  & > * {
+    &:not(:last-child) {
       margin-bottom: 17px;
     }
   }
 }
 
-.addContainer{
+.addContainer {
   display: flex;
   align-items: center;
 
-  span{
+  span {
     margin-left: 5px;
     margin-right: auto;
   }
 }
 
-.sendBtn{
+.sendBtn {
   padding: 15px 70px;
   background-color: #0177FB;
   font-size: 12px;

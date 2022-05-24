@@ -1,32 +1,34 @@
-.container{
+.container {
   justify-content: space-between;
   align-items: center;
 }
-.debitContent{
+
+.debitContent {
   display: flex;
   justify-content: space-between;
   padding: 17px 0 17px 15px;
 
-  &>*{
+  & > * {
     display: flex;
     align-items: center;
 
-    span{
+    span {
       font-size: 9px;
       font-weight: 500;
     }
   }
 }
-.debitCircles{
+
+.debitCircles {
   margin-right: 11px;
 }
 
-.amountContainer{
+.amountContainer {
   font-size: 12px;
   display: flex;
   flex: 0 1 80px;
 
-  span{
+  span {
     color: #A4B4CB;
     font-size: 12px;
     margin-right: 2px;
