@@ -27,8 +27,8 @@ const Card = () => {
     mode: "all"
   });
 
-  const onSubmit =(data)=>{
-    if (parseInt(data.amount) !== 0){
+  const onSubmit = (data) => {
+    if (parseInt(data.amount) !== 0) {
       console.log(JSON.stringify(data));
       reset()
     }
@@ -70,9 +70,10 @@ const Card = () => {
               <Input errors={errors}
                      name='amount'
                      control={control}
-                     rules={{required:'Required field',
-                       pattern:{value:/^[0-9.,]+$/, message: 'Invalid input'},
-                      }}/>
+                     rules={{
+                       required: 'Required field',
+                       pattern: {value: /^[0-9.,]+$/, message: 'Invalid input'},
+                     }}/>
               <div className={styles.currencies}>
                 <img src={usd} alt={usd}/>
                 <img src={french} alt={french}/>
@@ -85,7 +86,7 @@ const Card = () => {
           <span> Astrid Hayes</span>
           <Add/>
         </div>
-        <button type='submit'  className={styles.sendBtn}>Send Money</button>
+        <button type='submit' className={styles.sendBtn}>Send Money</button>
       </form>
       <Transfer/>
     </div>
