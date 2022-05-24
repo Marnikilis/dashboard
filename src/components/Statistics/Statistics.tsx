@@ -20,9 +20,9 @@ const Statistics = () => {
     <div className={`box ${styles.container}`}>
       <div className={styles.text}> Statistics</div>
       <div className={styles.statisticsItems}>
-        {statistics.map(item => {
+        {statistics.map((item, i) => {
           return (
-            <div key={item.text} className={styles.statisticContainer}>
+            <div key={i} className={styles.statisticContainer}>
               <img src={item.img} alt='Statistic'/>
               <div className={styles.statisticText}>
                 <span>{item.amount}</span>
