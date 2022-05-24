@@ -6,9 +6,8 @@
   flex-direction: column;
 
   @include media-max($sm-break){
-  padding: 50px;
+  padding: 50px 0;
   }
-
   @include media-max($xxs-break){
     padding: 0;
   }
@@ -35,6 +34,7 @@
 }
 .flexContainer{
   display: flex;
+  margin-bottom: 35px;
 
   &>*{
     &:not(:last-child) {
@@ -45,7 +45,7 @@
       }
     }
   }
-  @include media-max($xxs-break){
+  @include media-max($l-break){
     flex-direction: column;
     align-items:flex-start;
     margin-bottom: 20px ;
