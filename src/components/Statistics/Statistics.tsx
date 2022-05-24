@@ -23,7 +23,7 @@ const Statistics = () => {
         {statistics.map(item => {
           return (
             <div key={item.text} className={styles.statisticContainer}>
-              <img src={item.img} alt='Statisctic'/>
+              <img src={item.img} alt='Statistic'/>
               <div className={styles.statisticText}>
                 <span>{item.amount}</span>
                 <span>{item.text}</span>
