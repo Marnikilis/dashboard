@@ -45,6 +45,10 @@ body {
 
 .container{
   padding: 20px 30px 50px 20px;
+
+  @include media-max($xxs-break){
+    padding: 10px;
+  }
 }
 .wrapper {
   flex: 1 0 auto;
@@ -56,6 +60,7 @@ button{
   font-size: inherit;
   text-transform: capitalize;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 a,

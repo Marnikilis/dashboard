@@ -25,6 +25,7 @@
 .statisticContainer {
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   @include media-max($xxs-break) {
     margin-bottom: 10px;
