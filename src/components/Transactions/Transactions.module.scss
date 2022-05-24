@@ -1,45 +1,37 @@
 @import "../../scss/settings";
 @import "../../scss/mixins";
 
-.container{
-  margin: 40px 0;
+.container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
 }
-.scrollTable{
 
-  table{
-  width:110%;
-  height: 130px;
+.scrollTable {
+
+  table {
+    width: 109%;
+    height: 140px;
   }
 
-  @include media-max($xxs-break){
+  @include media-max($l-break) {
     overflow: scroll;
     table {
       width: 170%;
     }
-    tr{
-      margin-bottom: 20px;
-    }
-    td{
-      &:nth-child(1){
-      width: 40px;
-      }
-      width: 100px;
-      }
   }
 }
-
-.transactionText{
+.transactionText {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
-.headingThird{
+
+.headingThird {
   font-size: 15px;
 }
 
-.img{
+.img {
   width: 29px;
-  height: 29px;
+  height: auto;
 }

@@ -17,9 +17,13 @@ body {
   color: #000000;
 }
 .App {
-  display: flex;
   background-color: #EDF1F2;
+  display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .mainContainer {
@@ -99,7 +103,6 @@ a.active::before{
 }
 
 .box{
-  display: inline-block;
   border-radius: 10px;
   background-color: #FFFFFF;
   box-shadow: 0 10.9688px 21.9375px rgba(122, 122, 122, 0.2);
@@ -112,6 +115,12 @@ input{
   font-family: inherit;
   color: inherit;
   font-size: inherit;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 label{
