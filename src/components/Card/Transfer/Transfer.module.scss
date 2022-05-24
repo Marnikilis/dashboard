@@ -18,43 +18,32 @@
 .inputContainer{
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 5px;
+  padding: 6px 10px 5px;
   color: #3D424B;
   border: 1.2px solid #819CFD;
   border-radius: 8px;
+  font-size: 15px;
 
   label{
     color: #A8B1BF;
-    margin-bottom: 6px;
-  }
-
-  input{
-    font-size: 15px;
-    max-width: 120px;
-    padding-right: 10px;
-    &::placeholder{
-     color: #3D424B;
-    }
-  }
-  span{
-    font-size: 15px;
+    margin-bottom: 5px;
+    font-size: 10px;
   }
 }
 
 .inputContent{
   display: flex;
   align-items: center;
-  max-width: 120px;
 }
 
 .currencies{
   display: flex;
   align-items: center;
-  flex: 0 0 40%;
+  margin-left: auto;
 
   img{
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
     border-radius: 50%;
 
     &:nth-child(2){
@@ -67,7 +56,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
   border: 0.5px solid #F6F8FB;
   border-radius: 7px;
 
@@ -84,13 +73,15 @@
 }
 
 .debitCircles{
-  margin-right: 11px;
+  span{
+    margin-left: 5px;
+  }
 }
 
 .transferIcons{
   display: flex;
-  padding-bottom: 5px;
-  gap: 10px;
+  padding-bottom: 12px;
+  gap: 7px;
 
   &>*{
     display: flex;

@@ -8,14 +8,16 @@
   margin-right: 30px;
 
   @include media-max($lg-break){
+    margin-right: 0;
     flex-direction: row;
     margin-bottom: 20px ;
+    gap: 30px;
   }
 
-  @include media-max($xxs-break){
+  @include media-max($l-break){
     flex-direction: column;
     margin-bottom: 20px;
-    margin-right: 0;
+    gap: 0;
   }
 }
 .card{
@@ -39,7 +41,7 @@
   }
 
   @include media-max($lg-break){
-    margin-right: 50px;
+    //margin-right: 50px;
   }
   @include media-max($xxs-break){
     margin-right: 0;
@@ -92,18 +94,25 @@
 .inputContainer{
   display: flex;
   flex-direction: column;
-  padding: 5px 0;
+  padding: 3px 15px;
 }
 
 .inputContent{
   display: flex;
   align-items: center;
-  padding: 10px 0 15px;
+  padding: 10px 0;
+  font-size: 21px;
+
+  span{
+    margin-right: 5px;
+    color: #A4B4CB;
+  }
 }
 
-.curriences{
+.currencies{
   display: flex;
   align-items: center;
+  margin-left: auto;
 
   img{
     height: 15px;
@@ -121,40 +130,29 @@
   font-size: 20px;
   color: #A4B4CB;
 }
-
-.sendContainer{
-  margin-bottom: 25px;
-
-  @include media-max($lg-break){
-    margin-top: -30px;
-  }
-
-  @include media-max($l-break){
-    margin-top: 0;
-  }
-
-
-}
-.addContainer{
-  display: flex;
-  align-items: center;
- justify-content: space-between;
+form{
 
   &>*{
-    display: flex;
-    align-items: center;
-
-    span{
-      margin-left: 5px;
-      font-size: 12px;
+    &:not(:last-child){
+      margin-bottom: 17px;
     }
   }
 }
 
+.addContainer{
+  display: flex;
+  align-items: center;
+
+  span{
+    margin-left: 5px;
+    margin-right: auto;
+  }
+}
+
 .sendBtn{
-  margin-top: 20px;
   padding: 15px 70px;
   background-color: #0177FB;
   font-size: 12px;
   border-radius: 16px;
+  margin-bottom: 25px;
 }

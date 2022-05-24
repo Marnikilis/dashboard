@@ -1,17 +1,38 @@
 import React from 'react';
 //@ts-ignore
 import styles from './Card.module.scss';
-import {ReactComponent as MyCard} from '../../images/card.svg';
-import {ReactComponent as Visa} from '../../images/visa.svg';
-import {ReactComponent as Add} from '../../images/addBtn.svg';
+import { ReactComponent as MyCard } from '../../images/card.svg';
+import { ReactComponent as Visa } from '../../images/visa.svg';
+import { ReactComponent as Add } from '../../images/addBtn.svg';
 
 import av4 from '../../images/avatars/av4.svg';
 import Debit from "./Debit/Debit";
 import Transfer from "./Transfer/Transfer";
-import InputAmount from "./InputAmount/InputAmount";
+import { useForm } from 'react-hook-form';
+import av3 from '../../images/avatars/av3.svg';
+import Input from '../UI/Input/Input';
+import usd from '../../images/currencies/usa.png';
+import french from '../../images/currencies/french.png';
 
+
+interface FormData {
+  amount: string;
+}
 
 const Card = () => {
+  const {handleSubmit, control, formState: {errors}, reset} = useForm<FormData>({
+    defaultValues: {
+      amount: ""
+    },
+    mode: "all"
+  });
+
+  const onSubmit =(data)=>{
+    if (parseInt(data.amount) !== 0){
+      console.log(JSON.stringify(data));
+      reset()
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -36,22 +57,37 @@ const Card = () => {
         <div className={'box'}>
           <Debit/>
         </div>
+      </div>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className={'box'}>
-          <InputAmount/>
-        </div>
-      </div>
-      <div>
-        <div className={styles.sendContainer}>
-          <div className={styles.addContainer}>
-            <div>
-              <img src={av4} alt='Avatar'/>
-              <span> Astrid Hayes</span></div>
-            <Add/>
+          <div className={styles.inputContainer}>
+            <label>
+              <img src={av3} alt='Avatar'/>
+              Enter the amount
+            </label>
+            <div className={styles.inputContent}>
+              <span>$</span>
+              <Input errors={errors}
+                     name='amount'
+                     control={control}
+                     rules={{required:'Required field',
+                       pattern:{value:/^[0-9.,]+$/, message: 'Invalid input'},
+                      }}/>
+              <div className={styles.currencies}>
+                <img src={usd} alt={usd}/>
+                <img src={french} alt={french}/>
+              </div>
+            </div>
           </div>
-          <button className={styles.sendBtn}>Send Money</button>
         </div>
-        <Transfer/>
-      </div>
+        <div className={styles.addContainer}>
+          <img src={av4} alt='Avatar'/>
+          <span> Astrid Hayes</span>
+          <Add/>
+        </div>
+        <button type='submit'  className={styles.sendBtn}>Send Money</button>
+      </form>
+      <Transfer/>
     </div>
   );
 };
