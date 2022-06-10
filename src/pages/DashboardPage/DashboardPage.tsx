@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 //@ts-ignore
-import styles from './DashboardPage.module.scss';
+import styles from "./DashboardPage.module.scss";
 import Card from "../../components/Card/Card";
 import Transactions from "../../components/Transactions/Transactions";
 import Statistics from "../../components/Statistics/Statistics";
@@ -12,14 +12,14 @@ const DashboardPage = () => {
     <div className={styles.container}>
       <div className={styles.headingFirst}>My Card</div>
       <div className={styles.mainPartContainer}>
-        <Card/>
+        <Card />
         <div>
           <div className={styles.flexContainer}>
-            <MoneyFlow/>
-            <Contacts/>
+            <MoneyFlow />
+            <Contacts />
           </div>
-          <Transactions/>
-          <Statistics/>
+          <Transactions />
+          <Statistics />
         </div>
       </div>
     </div>
